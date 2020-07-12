@@ -1,0 +1,18 @@
+import array 
+a = array.array('i',[])
+n= int(input('enter the legth of array'))
+for i in range(n):
+    x = int(input('enter the values of the array'))
+    a.append(x)
+print(a)
+T = int(input("enter the target vaue"))
+i = 0
+while i<n:
+    for j in range(1,n):
+        if i!=j:
+            if a[i]+a[j]==T:
+                print(i)
+                print(j)
+        else:
+            continue
+    i = i+1
