@@ -1,0 +1,15 @@
+import array 
+arr = array.array('i',[])
+l = int(input('enter the length of array'))
+for i in range(l):
+    x = int(input('enter the elements of array'))
+    arr.append(x)
+key = int(input('enter the key element that needs to be found'))
+a=0
+for i in range(0,4):
+    if arr[i]==key:
+        a+=1
+if a==1:
+    print('key found')
+else:
+    print('key not found')
