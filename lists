@@ -1,0 +1,7 @@
+num = []
+for i in range(0,5):
+    x = int(input("enter the values"))
+    num.append(x)
+print(num)
+num.reverse()
+print(num)
